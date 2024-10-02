@@ -1,0 +1,223 @@
+html *
+{
+   font-size: 25px;
+   font-family:'Times New Roman', Times, serif
+}
+
+body {
+  margin: 0;
+}
+
+body, html {
+  height: 100%;
+}
+
+/* Navigation */
+nav{
+  display: block;
+  position: fixed;
+  z-index: 999;
+}
+
+.navigation {
+  opacity: 0.75;
+}
+
+.navigation ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navigation li {
+  float: left;
+}
+
+.navigation a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+  background-color: lightgreen;
+  color: black;
+}
+
+.navigation .icon {
+  display: none;
+}
+
+/* Backgrounds */
+
+.bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no repeat;
+  background-size: cover;
+}
+
+.bg_home{
+  height: 100%;
+  background-image: url('https://static.pexels.com/photos/169573/pexels-photo-169573.jpeg');
+  
+}
+#p{
+  position: relative;
+  bottom: 220px;
+  font-size:xxx-large;
+  font-weight: 500;
+}
+font{
+  font-size:xxx-large;
+}
+.bg_about_me{
+  height: 180px;
+  background-color: lightgray;
+}
+.about{
+    text-align:center;
+    padding-top: 30px;
+    
+}
+.bg_projects{
+  height:80% ;
+  background-image: url('https://i.pinimg.com/originals/a0/c8/de/a0c8de02ddd2fd91cc142bc3b2c09b25.jpg');
+}
+.bg_contact{
+  height: 50px;
+  background-color: lightgray;
+  margin: 0;
+  padding-top: 5px;
+  text-align: center;
+}
+
+footer ul a img{
+  max-width: auto;
+  max-height: 35px;
+  z-index: 998;
+}
+
+/* Other vital things */
+.caption {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+}
+.border{
+  background-color: rgba(156, 167, 180, 0.5);
+  padding: 25px;
+  font-size: 25px;
+  border-radius: 15px 50px;
+}
+/* thumbnail */
+.thumbnail-container{
+  position: relative;
+  top : 50%;
+  width: 100%;
+  text-align: center;
+}
+
+.thumbnail-container ul{
+  margin: 0;
+  padding: 0;
+
+}
+.thumbnail-container li {
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.thumbnail{
+  width: 200px;
+  
+}
+.thumbnail img{
+  max-width: 200px;
+  height: auto;
+  border-radius: 20%;
+
+}
+
+/* For tablets */
+@media only screen and (max-width: 600px){
+  .navigation ul li:not(:first-child){display:none;}
+  .navigation a.icon {
+    float: right;
+    display: block;
+  }
+  
+  /* When menu button is toggled */
+  .navigation.toggled {position: relative;}
+  .navigation.toggled ul li{
+    float: none;
+    display: block;
+  }
+  .navigation.toggled a.icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  /* Display caption nicely on tablets */
+  .caption{
+    top: 40%;
+  }
+  .border{
+    background-color: rgba(156, 167, 180, 0.5);
+    padding: 20px;
+    display: block;
+   }
+  .thumbnail-container{
+    top : 30%;
+  }
+}
+
+/* For phones */
+@media only screen and (max-width: 450px){
+  .navigation ul li:not(:first-child){display:none;}
+  .navigation a.icon {
+    float: right;
+    display: block;
+  }
+  
+  /* When menu button is toggled */
+  .navigation.toggled {position: relative;}
+  .navigation.toggled ul li{
+    float: none;
+    display: block;
+  }
+  .navigation.toggled a.icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  /* Display caption nicely on phones */
+  .caption{
+    top: 40%;
+  }
+  .border{
+    background-color: rgba(156, 167, 180, 0.5);
+    padding: 20px;
+    display: block;
+    }
+  
+  /* Display thumbnail nicely on phones */
+  .bg_projects{
+    height: auto;
+    min-height: 100vh;
+  }
+}
+
+.fa-instagram{
+    background-color: antiquewhite;
+}
