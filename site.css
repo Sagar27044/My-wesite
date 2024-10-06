@@ -37,6 +37,9 @@ nav{
 .navigation li {
   float: left;
 }
+.navigation li button{
+  background-color: darkgray;
+}
 
 .navigation a {
     display: block;
