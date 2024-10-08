@@ -343,3 +343,7 @@ transform: translateZ(calc(var(--index) * 10));
   display: block;
 }
 
+.disc{
+   align-text:left:
+   }
+
