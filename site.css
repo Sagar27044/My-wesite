@@ -331,3 +331,15 @@ z-index: 100;
 transform: translateZ(calc(var(--index) * 10));
   margin: 0 .45vw;
 }
+
+.hidden-text {
+  display: none;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.item:focus .hidden-text {
+  display: block;
+}
+
