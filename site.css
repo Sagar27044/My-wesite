@@ -344,6 +344,6 @@ transform: translateZ(calc(var(--index) * 10));
 }
 
 .disc{
-   align-text:left:
-   }
+   align-text:left;
+}
 
