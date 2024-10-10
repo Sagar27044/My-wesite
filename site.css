@@ -342,5 +342,16 @@ transform: translateZ(calc(var(--index) * 10));
 .item:focus .hidden-text {
   display: block;
 }
+.disp p{
+  text-align: left;
+  font-size:x-small;
+  padding: 10px;
+}
+.disp a{
+  position: relative;
+  right: 110px;
+  bottom: 10px;
+  color: brown;
+}
 
 
